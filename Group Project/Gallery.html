@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="HomeGPstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Community Kitchen</title>
+    
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 5px;
+        color: rgb(17, 17, 17);
+        background-color: #AEDB9F;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4rem !important;
+      }
+
+      .custom-nav-link {
+        margin: 0 1rem;
+        font-size: 1.25rem;
+      }
+
+      h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 2.2rem !important;
+        font-weight: 500 !important;
+        padding: 2%;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .gallery-item {
+        overflow: hidden;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Gallery</h1>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="HomeGP.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="Recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="CookingTips.html">Cooking Tips</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link custom-nav-link" href="Gallery.html">Gallery <span class="sr-only">(current)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="Submit.html">Submit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Featured photos of the meals made by the community, from the community:</h2>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="photos/Broth.jpg" alt="Photo 1">
+      </div>
+      <div class="gallery-item">
+        <img src="photos/Choripan.JPG" alt="Photo 2">
+      </div>
+      <div class="gallery-item">
+        <img src="photos/consomme.jpg" alt="Photo 3">
+      </div>
+      <div class="gallery-item">
+        <img src="photos/Gnocchi.JPG" alt="Photo 4">
+      </div>
+      <div class="gallery-item">
+        <img src="photos/Ragu.JPG" alt="Photo 5">
+      </div>
+      <div class="gallery-item">
+        <img src="photos/Romesco.JPG" alt="Photo 6">
+      </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="imgExpanded">
+      <div id="caption"></div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
